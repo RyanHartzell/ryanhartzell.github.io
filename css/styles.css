@@ -631,7 +631,7 @@ progress {
 
 .img-fluid {
   max-width: 100%;
-  height: auto;
+  height: 25rem;
 }
 
 .img-thumbnail {
@@ -11347,17 +11347,37 @@ html {
   letter-spacing: 0.1rem;
 }
 
+/* body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+} */
+
 header.masthead {
   position: relative;
   overflow: hidden;
   padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;
-  background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%);
+  /* background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%); */
+  background: linear-gradient(-45deg, #ff6a00, #ee0979, #0d6efd, #6610f2);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
-  background-size: cover;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
 header.masthead .masthead-content {
   z-index: 1;
   position: relative;
@@ -11379,6 +11399,7 @@ header.masthead .bg-circle {
   position: absolute;
   border-radius: 100%;
   background: linear-gradient(0deg, #ee0979 0%, #ff6a00 100%);
+  animation: circle-pos-gradient 10s ease infinite;
 }
 header.masthead .bg-circle-1 {
   height: 90rem;
@@ -11403,6 +11424,18 @@ header.masthead .bg-circle-4 {
   width: 30rem;
   top: -5rem;
   right: 35%;
+}
+
+@keyframes circle-pos-gradient {
+  0% {
+    transform: translateX(0%) translateY(0%);
+  }
+  50% {
+    transform: translateX(100%) translateY(-100%);
+  }
+  100% {
+    transform: translateX(0%) translateY(0%);
+  }
 }
 
 @media (min-width: 992px) {
