@@ -83,7 +83,7 @@
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">
-                            <h2 class="display-4">About Me</h2>
+                            <h1 class="display-4" style="font-weight: bold;">About Me</h1>
                             <p>I have many imaging science domain-related interests, but for the most part these boil down to remote sensing, computer vision, and modeling and simulation of imaging systems.
                                 I'm lucky to have had a background in both remote sensing for Earth observation and astronomical imaging applications - fitting for my love of space!
                                 I have a passion for creative computing solutions, and I keep up on accelerated and distributed computing concepts in my personal time. I'm happiest when I'm working on open ended problems and R&D!
@@ -98,7 +98,17 @@
 
         <!-- Figure out how to set a horizontal break... CSS? -->
         <!-- <hr data-content="School and Work History" class="hr-text"> -->
-        <hr class="hr-text" data-content="Education">
+        <!-- <hr class="hr-text" data-content="Education"> -->
+        <!-- <hr class="no-text">
+            <div class="p-5"><h2 class="display-3" style="text-align: center;">Education</h2></div>
+        <hr class="no-text"> -->
+        <!-- <div class="container px-5">
+            <h1 class="display-4" style="text-align: center; font-weight: bold; color: white; background-color: var(--bs-primary); width: 100%; align-self: center;">Education</h1>
+        </div> -->
+        <hr class="no-text" style="background: black;">
+        <div class="container px-5">
+            <h1 class="display-4" style="text-align: center; font-weight: bold; color: black; width: 100%; align-self: center;">Education</h1>
+        </div>
 
         <!-- School-->
         <section id="school">
@@ -122,7 +132,16 @@
             </div>
         </section>
 
-        <hr class="hr-text" data-content="Work History">
+        <!-- <hr class="hr-text" data-content="Work History"> -->
+        <!-- <hr class="no-text"> -->
+        <!-- <div class="container px-5">
+            <h1 class="display-4" style="text-align: center; font-weight: bold; color: white; background-color: var(--bs-primary); width: 100%; align-self: center;">Work History</h1>
+        </div> -->
+        <!-- <hr class="no-text"> -->
+        <hr class="no-text" style="background: black;">
+        <div class="container px-5">
+            <h1 class="display-4" style="text-align: center; font-weight: bold; color: black; width: 100%; align-self: center;">Work History</h1>
+        </div>
 
         <!-- Work History-->
         <section id="work">
@@ -135,7 +154,7 @@
                         <div class="p-5">
                             <h2 class="display-4">Frontier Technology Inc. (FTI)</h2>
                             <p>
-                                <i class="fa-solid fa-location"></i> Boston, MA  <br> <i class="fa-solid fa-calendar"></i> 2018-present
+                                <i class="fa-solid fa-location"></i> Boston, MA  <br> <i class="fa-solid fa-calendar"></i> 2018-present <br> <i class="fa-solid fa-gears"></i> Intermediate Scientist
                             </p>
                             <p>
                                 Primarily supporting astronomical image processing pipelines, sensor modeling, image simulation, and R&D efforts for space domain awareness. 
@@ -157,12 +176,10 @@
                         <div class="p-5">
                             <h2 class="display-4">Harris Corp. (L3Harris)</h2>
                             <p>
-                                <i class="fa-solid fa-location"></i>  Rochester, NY  <br> <i class="fa-solid fa-calendar"></i> Summers 2016, 2017
+                                <i class="fa-solid fa-location"></i>  Rochester, NY  <br> <i class="fa-solid fa-calendar"></i> Summers 2016, 2017 <br> <i class="fa-solid fa-gears"></i> Image Scientist Intern
                             </p>
                             <p>
-                                Worked on automation of the segment's remote sensing and DIRSIG scene generation workflows, resulting in a more modular, 
-                                robust simulation system. Follow up work during second internship included developing a visualization system for data evaluation 
-                                adjacent to the main scene simulation workflow, and enveloped all areas of the remote sensing simulation workflow. All of this work was performed in Python.
+                                I worked on automation of the group’s remote sensing and DIRSIG scene generation workflows, resulting in a more modular, robust simulation system. Follow up work during my second internship included developing a dynamic visualization system for data evaluation adjacent to the main scene generation workflow, and enveloped all areas of the remote sensing simulation workflow. All of this work was performed in Python.
                             </p>
                         </div>
                     </div>
@@ -170,7 +187,16 @@
             </div>
         </section>
 
-        <hr class="hr-text" data-content="Skills (Highlights)">
+        <!-- <hr class="hr-text" data-content="Skills (Highlights)"> -->
+        <!-- <div class="container px-5">
+            <h1 class="display-4" style="text-align: center; font-weight: bold; color: white; background-color: var(--bs-primary); width: 100%; align-self: center;">Skills</h1>
+        </div> -->
+        <hr class="no-text" style="background: black;">
+        <div class="container px-5">
+            <h1 class="display-4" style="text-align: center; font-weight: bold; color: black; width: 100%; align-self: center;">Skills</h1>
+        </div>
+
+<!-- RH: Rewrite this section as a narrative, with a list of languages+libs then a paragraph characterizing my software skills. Afterwards, do the same for my scientific skills -->
 
         <!-- Skills -->
         <section id="skills">
@@ -178,13 +204,10 @@
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">
-                            <h2 class="display-4">Programming</h2>
-                            <h4>
+                            <h2 class="display-4">Languages</h2>
+                            <p>
                                 <li>
                                     Scientific Python (numpy, scipy, etc.)
-                                </li>
-                                <li>
-                                    Specialized libraries (OpenCV, Boost, PyTorch, CuPy, Dask, etc.)
                                 </li>
                                 <li>
                                     C++
@@ -195,13 +218,13 @@
                                 <li>
                                     JavaScript / TypeScript
                                 </li>
-                            </h4>
+                            </p>
                         </div>
                     </div>
                     <div class="col-lg-6 order-lg-2">
                         <div class="p-5">
-                            <h2 class="display-4">Scientific</h2>
-                            <h4>
+                            <h2 class="display-4">Scientific Knowledge</h2>
+                            <p>
                                 <li>
                                     Radiometrically-accurate image simulation and sensor modeling
                                 </li>
@@ -212,21 +235,127 @@
                                     Imaging system calibration and analysis
                                 </li>
                                 <li>
-                                    Physical optics and Fourier methods
+                                    Astronomical mission and CONOPS design and evaluation
                                 </li>
-                            </h4>
+                                <li>
+                                    Physical optics and Fourier methods for imaging
+                                </li>
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="row gx-5 align-items-center">
-                    <div class="col-lg-12 order-lg-1" style="text-align: center;">
-                        <h6>* Extended lists of skills, areas of expertise, and technologies I consider myself proficient in are listed on my resume.</h4>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">Packages and Tools</h2>
+                            <p>
+                                <li>
+                                    OpenCV, Boost, Dask
+                                </li>
+                                <li>
+                                    PyTorch, Sklearn, Keras
+                                </li>
+                                <li>
+                                    Matplotlib, Bokeh, Jupyter
+                                </li>
+                                <li>
+                                    DIRSIG, MODTRAN, STK, Blender 
+                                </li>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5">
+                            <h2 class="display-4">Web and Cloud</h2>
+                            <p>
+                                <li>
+                                    Docker, Kubernetes, and OpenFaaS
+                                </li>
+                                <li>
+                                    Angular, Flask, Django, Streamlit
+                                </li>
+                                <li>
+                                    SQL Databases, S3/Minio
+                                </li>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <hr class="hr-text" data-content="Personal Projects">
+<!--     \tag{Image Simulation}
+    \tag{Sensor Modeling}
+    \tag{Space Domain Awareness}
+    \tag{Fourier Methods}
+    \tag{Computer Vision}
+    \tag{Radiometry}
+    \tag{Physical Optics}
+    \tag{Astronomical Imaging CONOPS}
+    \tag{Agile DevOps}
+    \tag{Calibration, Characterization, and Design of Imaging Systems}
+    \tag{ML/DL}
+    \tag{Data Science}
+    \tag{Cloud/Accelerated/Distributed Computing}
+    \tag{sUAS and Earth Observation Remote Sensing}
+    \tag{Object Detection} 
+
+    \skillsection{Scientific Programming}
+    \skill{Python/Numpy/Scipy}{5}
+    \skill{C++}{4}
+    \skill{Matlab}{4}
+
+    \vspace{0.5em}
+    \skillsection{Specialized Computing}
+    \skill{OpenCV}{4}
+    \skill{Boost}{3}
+    \skill{PyTorch}{4}
+    \skill{Sklearn}{3}
+    \skill{TensorFlow+Keras}{2}
+    \skill{Dask}{4}
+    \skill{cupy/RAPIDS}{3}
+    \skill{CUDA C/C++ API}{1}
+    \skill{Cython}{1}
+    
+    \vspace{0.5em}
+    \skillsection{Visualization}
+    \skill{Matplotlib}{5}
+    \skill{Jupyter}{5}
+    \skill{Streamlit}{4}
+    \skill{Bokeh}{4}
+    
+    \vspace{0.5em}
+    \skillsection{Web}
+    \skill{HTML/CSS}{4}
+    \skill{JS/TypeScript}{3}
+    \skill{Angular}{3}
+    \skill{Flask/SocketIO}{3}
+    \skill{Django}{2}
+
+    \vspace{0.5em}
+    \skillsection{Cloud + Services}
+    \skill{Docker}{4}
+    \skill{OpenFaaS}{3}
+    \skill{Kubernetes}{3}
+    \skill{SQL}{3}
+    \skill{S3/Minio}{3}
+
+    \vspace{0.5em}
+    \skillsection{Software/Tools/Utility}
+    \simpleskill{Linux/Unix (Ubuntu, RHEL/CentOS), Bash}
+    \simpleskill{Windows, Office, Git/SVN, Azure DevOps}
+    \simpleskill{DIRSIG, MODTRAN, STK, Blender}
+-->
+
+        <!-- <hr class="hr-text" data-content="Personal Projects"> -->
+        <!-- <div class="container px-5">
+            <h1 class="display-4" style="text-align: center; font-weight: bold; color: white; background-color: var(--bs-primary); width: 100%; align-self: center;">Personal Projects</h1>
+        </div> -->
+
+        <hr class="no-text" style="background: black;">
+        <div class="container px-5">
+            <h1 class="display-4" style="text-align: center; font-weight: bold; color: black; width: 100%; align-self: center;">Projects</h1>
+        </div>
 
         <!-- Projects -->
         <section id="projects">
@@ -238,12 +367,11 @@
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">
                             <h2 class="display-4">ImagePypelines</h2>
-                            <h4><i class="fa-brands fa-github"></i> <a href="https://github.com/jmaggio14/imagepypelines">Project Page</a> <i class="fa-solid fa-home"></i> <a href="https://www.imagepypelines.org/">Home Page</a></h4>
-                            <p>One of three lead developers of the ImagePypelines Python library.
-                                The library provides scientists and engineers with an easy interface for code reuse and non-sequential data pro-
-                                cessing pipeline refactoring, while abstracting logging, debugging, and workflow visualization. The library also
-                                allows scientists to remotely monitor their experiments and interact with live python processes on various con-
-                                nected hosts via a dashboard.</p>
+                            <p><i class="fa-brands fa-github"></i> <a href="https://github.com/jmaggio14/imagepypelines">Project Page</a> <i class="fa-solid fa-home"></i> <a href="https://www.imagepypelines.org/">Home Page</a></p>
+                            <p>
+                            One of three lead developers of the ImagePypelines Python library.
+                                The library provides scientists and engineers with an easy interface for code reuse and non-sequential data processing pipeline refactoring, while abstracting logging, debugging, and workflow visualization. The library also
+                                allows scientists to remotely monitor their experiments and interact with live python processes on various connected hosts via a dashboard.</p>
                         </div>
                     </div>
                 </div>

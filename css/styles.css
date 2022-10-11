@@ -92,13 +92,13 @@ body {
 
 /* RH: Tweaking here and seeing if it works for section headers */
 hr.no-text {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   position: relative;
     border: none;
     height: 1rem;
     width: 75%;
-    background: var(--bs-primary);  
+    background: var(--bs-primary);
 }
 
 hr.hr-text {
@@ -629,9 +629,14 @@ progress {
   content: "— ";
 }
 
+/* RH: Current setup makes logos kinda big, but they're all correct aspect ratio and fill their elements fully. Probably need to scale by 50% and shift by 50% */
 .img-fluid {
   max-width: 100%;
-  height: 25rem;
+  height: 75%;
+  width: 75%;
+  translate: 12.5%;
+  align-self: center;
+  aspect-ratio: 1/1;
 }
 
 .img-thumbnail {
@@ -3062,12 +3067,14 @@ textarea.form-control-lg {
 .btn-primary {
   color: #fff;
   background-color: #ee0979;
-  border-color: #ee0979;
+  border-color: #fff;
+  border-width: 5px;
 }
 .btn-primary:hover {
   color: #fff;
   background-color: #ca0867;
   border-color: #be0761;
+  border-width: 5px;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
@@ -11398,7 +11405,11 @@ header.masthead .bg-circle {
   z-index: 0;
   position: absolute;
   border-radius: 100%;
-  background: linear-gradient(0deg, #ee0979 0%, #ff6a00 100%);
+  background: radial-gradient(#ff6a00, #ee0979, #0d6efd, #6610f2);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: 200% 200%;
   animation: circle-pos-gradient 10s ease infinite;
 }
 header.masthead .bg-circle-1 {
@@ -11429,12 +11440,15 @@ header.masthead .bg-circle-4 {
 @keyframes circle-pos-gradient {
   0% {
     transform: translateX(0%) translateY(0%);
+    background-position: 50% 0%;
   }
   50% {
     transform: translateX(100%) translateY(-100%);
+    background-position: 50% 100%;
   }
   100% {
     transform: translateX(0%) translateY(0%);
+    background-position: 50% 0%;
   }
 }
 
