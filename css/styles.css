@@ -11,6 +11,21 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
+  /* Mines colors */
+  --mines-darkblue: #21314d;
+  --mines-blasterblue: #09396C;
+  --mines-lightblue: #879EC3;
+  --mines-paleblue: #CFDCE9;
+  --mines-redrocks: #CC4628;
+  --mines-silver: #81848A;
+
+  --mines-darkblue-rgb: rgb(33,49,77);
+  --mines-blasterblue-rgb: rgb(9,57,108);
+  --mines-lightblue-rgb: rgb(135,158,195);
+  --mines-paleblue-rgb: rgb(207,220,233);
+  --mines-redrocks-rgb: rgb(204,70,40);
+  --mines-silver-rgb: rgb(129,132,138);
+
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -33,14 +48,14 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #ee0979;
-  --bs-secondary: #ff6a00;
+  --bs-primary: var(--mines-redrocks);
+  --bs-secondary: var(--mines-blasterblue);
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
-  --bs-light: #f8f9fa;
-  --bs-dark: #212529;
+  --bs-light: var(--mines-paleblue);
+  --bs-dark: var(--mines-darkblue);
   --bs-primary-rgb: 238, 9, 121;
   --bs-secondary-rgb: 255, 106, 0;
   --bs-success-rgb: 25, 135, 84;
@@ -3066,34 +3081,34 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #ee0979;
+  background-color: var(--mines-redrocks);
   border-color: #fff;
   border-width: 5px;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #ca0867;
-  border-color: #be0761;
+  background-color: var(--mines-lightblue);
+  border-color: var(--mines-paleblue);
   border-width: 5px;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color: #ca0867;
-  border-color: #be0761;
+  background-color: var(--mines-lightblue);
+  border-color: var(--mines-paleblue);
   box-shadow: 0 0 0 0.25rem rgba(241, 46, 141, 0.5);
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #be0761;
-  border-color: #b3075b;
+  background-color: var(--mines-lightblue);
+  border-color: var(--mines-paleblue);
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.25rem rgba(241, 46, 141, 0.5);
 }
 .btn-primary:disabled, .btn-primary.disabled {
   color: #fff;
-  background-color: #ee0979;
-  border-color: #ee0979;
+  background-color: var(--mines-lightblue);
+  border-color: var(--mines-paleblue);
 }
 
 .btn-secondary {
@@ -7754,12 +7769,12 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: var(--mines-darkblue) !important;
 }
 
 .text-secondary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+  color: var(--mines-redrocks) !important;
 }
 
 .text-success {
@@ -7804,7 +7819,7 @@ textarea.form-control-lg {
 
 .text-body {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
+  color: var(--mines-darkblue) !important;
 }
 
 .text-muted {
@@ -11366,11 +11381,12 @@ header.masthead {
   padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;
   /* background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%); */
-  background: linear-gradient(-45deg, #ff6a00, #ee0979, #0d6efd, #6610f2);
+  /* background: linear-gradient(-45deg, var(--mines-blasterblue-rgb), var(--mines-redrocks-rgb), var(--mines-silver-rgb), var(--mines-paleblue-rgb)); */
+  background: linear-gradient(-45deg, var(--mines-blasterblue-rgb), var(--mines-darkblue-rgb), var(--mines-redrocks-rgb));
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
-  background-size: 400% 400%;
+  background-size: 200% 200%;
   animation: gradient 15s ease infinite;
 }
 @keyframes gradient {
@@ -11405,7 +11421,7 @@ header.masthead .bg-circle {
   z-index: 0;
   position: absolute;
   border-radius: 100%;
-  background: radial-gradient(#ff6a00, #ee0979, #0d6efd, #6610f2);
+  background: radial-gradient(var(--mines-paleblue), var(--mines-redrocks), var(--mines-darkblue), var(--mines-blasterblue));
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
