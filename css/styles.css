@@ -8009,6 +8009,10 @@ textarea.form-control-lg {
   border-radius: 50rem !important;
 }
 
+.rounded-rect {
+  border-radius: 25% !important;
+}
+
 .rounded-top {
   border-top-left-radius: 0.25rem !important;
   border-top-right-radius: 0.25rem !important;
